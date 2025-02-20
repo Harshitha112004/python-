@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+.parent{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto auto;
+    background-color: black;
+    padding: 20px;
+    width: 70%;
+    grid-template-areas: 
+    "html html html html"
+    "css bootstrap bootstrap tuple"
+    "string bootstrap bootstrap tuple"
+    "string list list list";
+}
+
+        .parent>div{
+            background-color: darkkhaki;
+            padding: 40px;
+        }      
+        .html{
+            grid-area: html;
+        }
+        .css{
+            grid-area: css;
+        }
+        .bootstrap{
+            grid-area: bootstrap;
+        }
+        .tuple{
+            grid-area: tuple;
+        }
+        .string{
+            grid-area: string;
+        }
+        .list{
+            grid-area: list;
+        }
+        body{
+            padding-left: 350px;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+<div class="html">html</div>
+<div class="css">css</div>
+<div class="bootstrap">bootstrap</div>
+<div class="tuple">tuple</div>
+<div class="string">string</div>
+<div class="list">list</div>
+</div>
+</body>
+</html>
