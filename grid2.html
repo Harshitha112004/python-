@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+.parent{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "header header header"
+    "footer footer empty"
+    "main main empty"
+    "sidebar sidebar empty"
+    "navi navi navi";
+    width: 50vw;
+    background-color: rgb(40, 13, 13);
+    padding: 20px;
+    color: white;
+}
+
+        .parent>div{
+            background-color: rgb(238, 146, 146);
+            padding: 40px;
+        }      
+        .header{
+            grid-area: header;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .main{
+            grid-area: main;
+        }
+        .empty{
+            grid-area: empty;
+        }
+        .sidebar{
+            grid-area: sidebar;
+        }
+        .navi{
+            grid-area: navi;
+        }
+        body{
+            padding-left: 350px;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+<div class="header">header</div>
+<div class="footer">sidebar</div>
+<div class="main">content 1</div>
+<div class="empty">content 2</div>
+<div class="sidebar">content 3</div>
+<div class="navi">footer</div>
+</div>
+</body>
+</html>
