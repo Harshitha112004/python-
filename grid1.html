@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+ .parent{
+    display: grid;
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 20px;
+    width: 50vw;
+    background-color: black;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-areas: 
+    
+    "python python python python python python"
+    "java java html html html html"
+    "java java html html html html"
+    "java java javascript javascript nodejs nodejs"
+    "java java javascript javascript nodejs nodejs"
+    "react react react react react react";
+    
+    }
+        .parent>div{
+            background-color: bisque;
+            padding: 50px;
+        }      
+        .python{
+            grid-area: python;
+        }
+        .java{
+            grid-area: java;
+        }
+        .html{
+            grid-area: html;
+        }
+        .javascript{
+            grid-area: javascript;
+        }
+        .nodejs{
+            grid-area: nodejs;
+        }
+        .react{
+            grid-area: react;
+        }
+        body{
+            padding-left: 350px;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="parent">
+<div class="python">Python</div>
+<div class="java">Java</div>
+<div class="html">html</div>
+<div class="javascript">javascript</div>
+<div class="nodejs">Node.Js</div>
+<div class="react">React</div>
+</div>
+</body>
+</html>
